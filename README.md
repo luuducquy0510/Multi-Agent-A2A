@@ -32,5 +32,5 @@ uvicorn agents.stay_agent.__main__:app --port 8082 &
 uvicorn agents.activities_agent.__main__:app --port 8083 &  
 
 
-streamlit run streamlit_app.py  
+streamlit run travel_ui.py  
 ```
