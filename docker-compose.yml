@@ -1,0 +1,19 @@
+services:
+  
+  flight_agent:
+    build: agents/flight_agent
+    ports:
+      - "8081:8081"
+    command: python run -m agents.flight_agent.__main__
+
+  stay_agent:
+    build: agents/stay_agent
+    ports:
+      - "8082:8082"
+    command: python run -m agents.stay_agent.__main__
+  
+  activites_agent:
+    build: agents/activities_agent
+    ports:
+      - "8083:8083"
+    command: python run -m agents.activities_agent.__main__
