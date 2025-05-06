@@ -23,7 +23,8 @@ flight_agent = Agent(
     instruction=(
         "Given a destination, travel dates, and budget, suggest 1-2 realistic flight options. "
         "Include airline name, price, and departure time. Ensure flights fit within the budget."
-        "Use the web search tool to find real-time flight information."
+        "You must use the web search tool to find real-time flight information."
+        "You must provide sources to support the suggestions about flight (links, urls,...)"
     ),
     tools=[web_search_tool]
 )

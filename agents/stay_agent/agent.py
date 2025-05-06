@@ -23,7 +23,8 @@ stay_agent = Agent(
     instruction=(
         "Given a destination, travel dates, and budget, suggest 2-3 hotel or stay options. "
         "Include hotel name, price per night, and location. Ensure suggestions are within budget."
-        "Use the web search tool to find real-time stay information."
+        "You must use the web search tool to find real-time stay information."
+        "You must provide sources to support the suggestions about hotels (links, urls,...)"
     ),
     tools=[web_search_tool]
 )

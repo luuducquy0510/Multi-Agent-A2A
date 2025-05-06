@@ -25,7 +25,8 @@ activities_agent = Agent(
         "Given a destination, dates, and budget, suggest 2-3 engaging tourist or cultural activities. "
         "For each activity, provide a name, a short description, price estimate, and duration in hours. "
         "Respond in plain English. Keep it concise and well-formatted."
-        "Use the web search tool to find real-time activity information."
+        "You must use the web search tool to find real-time activity information."
+        "You must provide sources to support the suggestions about activities (links, urls,...)"
     ),
     tools=[web_search_tool]
 )

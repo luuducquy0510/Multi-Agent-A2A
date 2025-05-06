@@ -11,7 +11,7 @@ origin = st.text_input("Where are you flying from?", placeholder="e.g., New York
 destination = st.text_input("Destination", placeholder="e.g., Paris")
 start_date = st.date_input("Start Date")
 end_date = st.date_input("End Date")
-budget = st.number_input("Budget (in USD)", min_value=100, step=50)
+budget = st.number_input("Budget (in USD) for each task", min_value=100, step=50)
 
 if st.button("Plan My Trip ✨"):
     if not all([origin, destination, start_date, end_date, budget]):
