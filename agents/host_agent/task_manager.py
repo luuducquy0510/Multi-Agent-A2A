@@ -21,6 +21,6 @@ async def run(payload):
     activities = activities if isinstance(activities, dict) else {}
     return {
         "flights": flights.get("flights", "No flights returned."),
-        "stay": stay.get("stays", "No stay options returned."),
+        "stays": stay.get("stays", "No stay options returned."),
         "activities": activities.get("activities", "No activities found.")
     }

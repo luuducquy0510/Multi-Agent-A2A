@@ -31,7 +31,7 @@ if st.button("Plan My Trip ✨"):
             st.subheader("✈️ Flights")
             st.markdown(data["flights"])
             st.subheader("🏨 Stays")
-            st.markdown(data["stay"])
+            st.markdown(data["stays"])
             st.subheader("🗺️ Activities")
             st.markdown(data["activities"])
         else:
